@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "e1822711-b7e5-4eb2-a666-8f9cb8496fc4",
+		"name": "Invoice_data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31298227"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "get_client",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/client/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_client_per_id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/client/clients/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"clients",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_client_per_dni",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/client/identification/14856329",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"identification",
+								"14856329"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"prueba\",\r\n        \"surname\": \"test\",\r\n        \"docNumber\": \"fgfgffffg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/client/create-client",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"create-client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"marcopolo\",\r\n         \"surname\": \"gallo\",\r\n        \"docNumber\": \"699\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/client/update/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"update",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/api/client/delete/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"client",
+								"delete",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "get_product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/api/product/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_product_per_id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/product/getById/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"getById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get_product_per_code",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/product/getByCode/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"getByCode",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"description\": \"test\",\r\n        \"code\": \"334752\",\r\n        \"stock\": 8,\r\n        \"price\": 50.0\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/product/create-product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"create-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update_product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"description\": \"un plato azul\",\r\n        \"code\": \"11\",\r\n        \"stock\": 8,\r\n        \"price\": 10.0\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/product/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete_product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/api/product/delete/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"product",
+								"delete",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "invoice",
+			"item": [
+				{
+					"name": "get_invoices",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get_invoice_per_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9500/api/invoice/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"invoice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create_invoice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": {\r\n        \"id\": 9\r\n    },\r\n    \"invoiceDetails\": [\r\n        {\r\n            \"productModel\": {\r\n                \"id\": 4 \r\n            },\r\n            \"quantity\": 1\r\n\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9500/api/invoice/create-invoice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9500",
+							"path": [
+								"api",
+								"invoice",
+								"create-invoice"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
